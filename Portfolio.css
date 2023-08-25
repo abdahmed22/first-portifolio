@@ -127,6 +127,7 @@
 
 .Services-comp, .Test-comp {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     text-align: center;
@@ -238,7 +239,8 @@ svg {
 }
 
 .Portfolio-items {
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;  
     justify-content: center;
     align-content: center;
     gap: 3rem;

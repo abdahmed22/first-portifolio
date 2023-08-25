@@ -2,13 +2,16 @@
 <html lang = "en">
 <head>
     <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One">
     <script src="./Portfolio.js" defer></script>
     <title>Personal Portfolio</title>
     <link rel = "shortcut icon" href = "Portfolio.png">
 </head>
 <body>
     <div class = "navbar">
-        <label style = "font-size: 40px; color: #17252a; font-family: 'Courier New';"> Mohamed Nabil </label>
+        <div class = "name"> 
+            <label style = "font-size: 40px; color: #17252a; font-family: 'Carter One'; margin-left: 3rem"> Mohamed Nabil </label>
+        </div>    
         <div class = "navbar-items">
             <button class = "buttons" onclick="document.getElementById('home').scrollIntoView()"> Home </button>
             <button class = "buttons" onclick="document.getElementById('Services').scrollIntoView()"> Services </button>
@@ -16,34 +19,37 @@
             <button class = "buttons" onclick="document.getElementById('Portfolio').scrollIntoView()" > Portfolio </button>
             <button class = "buttons" onclick="document.getElementById('Contact').scrollIntoView()"> Contact </button>
         </div>
-        <a class = "buttons" href = "./Mohamed Nabil updated resume.pdf" download style = "margin-right: 15px;"> Download CV</a>
+        <div class = "CVbutton">
+        <a class = "buttons" href = "./Mohamed Nabil updated resume.pdf" download style = "margin-right: 3rem;"> Download CV</a>
+        </div>
     </div>
     <div class = "home" id = "home">
         <div class = "home-components"> 
-            <h1 class = "home-text" style="color :white"> Mohamed Nabil, a front-end web developer</h1>
-            <h4 class = "home-text"> I attend the CST in web development to enrich my web dev skills.</h4>
-            <h4 class = "home-text"> Eager to increase my knowledge and make awesome hands-on projects.</h4>
-            <a class = "CV-icon" style = "margin-left: 200px;" href = "https://www.linkedin.com/in/mohamed-nabil-580a80239" target = "_blank"> Get Started</a>
+            <h1 class = "home-text" style="color :#8D8741"> Mohamed Nabil, a front-end web developer</h1>
+            <h3 class = "home-text"  style="color : #8D8741"> CUFE-CHS junior, Communications and Computer Engineering.</h3>
+            <h3 class = "home-text"  style="color : #8D8741"> I attend the CMP Summer Training in web development to enrich my front end and back end web development skills.</h3>
+            <h3 class = "home-text"  style="color : #8D8741"> Eager to increase my knowledge and make awesome hands-on projects to gain more experience.</h3>
+            <a class = "buttons" style = "margin-left: 200px; font-size: 1.5rem" href = "https://www.linkedin.com/in/mohamed-nabil-580a80239" target = "_blank"> Get Started</a>
         </div>
-        <div class = "home-image"> <img src = "./1692809401690.png" alt = "Home Image" max-height = 50%; width = 400px;></div> 
+        <div class = "home-image"> <img src = "./home-icon.png" alt = "Home Image"></div> 
     </div>
 </div>
 <div class = "Services" id = "Services"> 
-    <h4 style = "text-align: center; color: #116466; margin-top: 50px;">SERVICES</h4>
-    <h1 class = "Stext" style = "margin-bottom: 20px;"> Expertise Service! Let's check it out </h1>
-    <h3 class = "Stext" style = "margin-bottom: 40px;"> There are many services that I offer, like building websites using HTML,CSS 
+    <h4 style = "text-align: center; color: #116466; margin-top: 5.2rem;">SERVICES</h4>
+    <h1 class = "Stext"> Expertise Service! Let's check it out </h1>
+    <h3 class = "Stext"> There are many services that I offer, like building websites using HTML,CSS 
     and Javascript, making websites using React and making mobile apps using ReactNative. </h3>
     <div class = "Services-comp">
         <div class = "Sitem1"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><path fill="currentColor"
+            <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><path fill="black"
              d="M71.68 97.22L34.74 128l36.94 30.78a12 12 0 1 1-15.36 18.44l-48-40a12 12 0 0 1 0-18.44l48-40a12 12 0 0 1 15.36 18.44Zm176 
              21.56l-48-40a12 12 0 1 0-15.36 18.44L221.26 128l-36.94 30.78a12 12 0 1 0 15.36 18.44l48-40a12 12 0 0 0 0-18.44ZM164.1 
              28.72a12 12 0 0 0-15.38 7.18l-64 176a12 12 0 0 0 7.18 15.37a11.79 11.79 0 0 0 4.1.73a12 12 0 0 0 11.28-7.9l64-176a12 12 0 0 0-7.18-15.38Z"/></svg>
             <h3> HTML,CSS and JS </h3>
-            <p> I make websites using HTML,CSS and JS like log in forms, portfolio websites or even games like tic tac toe.</p>
+            <p> I make websites using HTML,CSS and JS like log-in forms, portfolio websites or even games like tic tac toe.</p>
         </div>
         <div class = "Sitem2"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10.11c1.03 0 1.87.84 1.87 1.89c0 1-.84 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M12 10.11c1.03 0 1.87.84 1.87 1.89c0 1-.84 
             1.85-1.87 1.85c-1.03 0-1.87-.85-1.87-1.85c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7c-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 
             2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86c.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5l-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 
             9c-.6 0-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47c.54.03 1.11.03 1.71.03c.6 0 1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 
@@ -74,12 +80,12 @@
 
 </div> 
 <div class = "testimonials" id = "Testimonials">
-    <h4 style = "text-align: center; color: #D1E8E2; margin-top: 50px;">TESTIMONIALS</h4>
+    <h4 style = "text-align: center; color: #D1E8E2; margin-top: 5.2rem">TESTIMONIALS</h4>
     <h1 class = "testimonials-text"> What people say about us</h1>
     <div class = "Test-comp">
         <div class = "Test-1">
             <img src = "5-star-bg.png" max-height = 20px; width = 50%;>
-            <p>I am impressed by his work ethics and communication skills. He adjusts to any given situation or business dynamics.</p>
+            <p style= "font-size: 1.1rem">I am impressed by his work ethics and communication skills. He adjusts to any given situation or business dynamics.</p>
             <div class = "small-test">
             <div class = "Test-image">
                 <img src = "./ahmed-taha.png" width = "60px" height = "60px"> </div>
@@ -91,7 +97,7 @@
         </div>
         <div class = "Test-2">
             <img src = "5-star-bg.png" max-height = 20px; width = 50%;>
-            <p>I am glad I have worked with him in some university projects and have no hesitation recommending him to potential employers.</p>
+            <p style= "font-size: 1.1rem">I am glad I have worked with him in some university projects and have no hesitation recommending him to potential employers.</p>
             <div class = "small-test">
                 <div class = "Test-image">
                     <img src = "./saif-wael.png" width = "60px" height = "60px"> 
@@ -104,7 +110,7 @@
         </div>
         <div class = "Test-3">
             <img src = "5-star-bg.png" max-height = 20px; width = 50%;>
-            <p>Mohamed is a very hard-working person who can solve any problem with ease.</p>
+            <p style= "font-size: 1.1rem">Mohamed is a very hard-working person who can solve any problem with ease.</p>
             <div class = "small-test">
                 <div class = "Test-image">
                     <img src = "./ziad-akram.png" width = "60px" height = "60px"> 
@@ -120,17 +126,17 @@
 
 </div>
 <div class = "Portfolio" id = "Portfolio">
-    <h4 style = "text-align: center; color: #116466; margin-top: 50px;">PORTFOLIO</h4>
+    <h4 style = "text-align: center; color: #116466; margin-top: 5.2rem;">PORTFOLIO</h4>
     <h1 class = "portfolio-text"> Digital Product Showcases</h1>
     <div class = "Portfolio-buttons">
-        <button class = "buttons" id = "All"> All </button>
-        <button class = "buttons" id = "Front-End"> Front-End </button>
-        <button class = "buttons" id = "Back-End"> Back-End </button>
-        <button class = "buttons" id = "Logic Design"> Logic Design </button>
+        <button class = "Portfolio-btns" id = "All"> All </button>
+        <button class = "Portfolio-btns" id = "Front-End"> Front-End </button>
+        <button class = "Portfolio-btns" id = "Back-End"> Back-End </button>
+        <button class = "Portfolio-btns" id = "Logic Design"> Logic Design </button>
     </div>
     <div class = "Portfolio-items">
         <div class = "P1" id = "TicTacToe"> 
-            <img src = "./TicTacToeImage.png" alt = "TicTacToe Project" width = "100%" height = "200px">
+            <img src = "./TicTacToeImage.png" alt = "TicTacToe Project" width = "100%" height = "200px" style = "border-radius: 3rem">
             <div class = "Project-data">
                 <div class = "project-descs">
                     <h3 class = "Project-titles"> TicTacToe Game</h3>
@@ -143,7 +149,7 @@
         </div>
 
         <div class = "P2" id = "ALU"> 
-            <img src = "./ALU.png" alt = "Basic ALU" width = "100%" height = "200px">
+            <img src = "./ALU.png" alt = "Basic ALU" width = "100%" height = "200px" style = "border-radius: 3rem">
             <div class = "Project-data">
                 <div class = "project-descs">
                     <h3 class = "Project-titles"> Basic ALU using Logisim</h3>
@@ -156,7 +162,7 @@
         </div>
 
         <div class = "P3" id = "ProcessScheduler"> 
-            <img src = "./process-scheduler.PNG" alt = "Process scheduler" width = "100%" height = "200px">
+            <img src = "./process-scheduler.PNG" alt = "Process scheduler" width = "100%" height = "200px" style = "border-radius: 3rem">
             <div class = "Project-data">
                 <div class = "project-descs">
                     <h4 class = "Project-titles"> Process scheduler using C++ (OOP)</h4>
@@ -169,7 +175,7 @@
         </div>
 
         <div class = "P4" id = "PaintForKids"> 
-            <img src = "./paint-for-kids.png" alt = "Paint for kids" width = "100%" height = "200px">
+            <img src = "./paint-for-kids.png" alt = "Paint for kids" width = "100%" height = "200px" style = "border-radius: 3rem">
             <div class = "Project-data">
                 <div class = "project-descs">
                     <h3 class = "Project-titles"> Paint for kids app</h3>
@@ -183,13 +189,17 @@
     </div>
 </div>
 
-<div class  ="Contact"  id = "Contact">
+<div class = "Contact" id = "Contact">
     <div class = "Contact-items">
         <h1 class = "contact-text" style = "margin-bottom: 20px; text-align: left; color:white">Got a Project? Lets talk!</h1>
-        <h3 class = "contact-text" style = "margin-bottom: 40px; text-align: left;"> You are one step away from owning an outstanding! website why are you waiting? </h3>
+        <h2 class = "contact-text" style = "margin-bottom: 40px; text-align: left; color:white"> You are one step away from owning an outstanding website! why are you waiting? </h2>
         <a class = "Contact-button" href = "https://www.linkedin.com/in/mohamed-nabil-580a80239" target = "_blank"> Contact </a>
     </div>
-    <div class = "contact-image"> <img src = "./linkedin-logo-linkedin-icon-transparent-free-png.png" alt = "Contact Image" style="    width: 30rem; height: 30 rem;"></div>
+    <div class = "contact-images"> 
+        <img src = "./linkedin-logo-linkedin-icon-transparent-free-png.png" alt = "Contact Image" style= "width: 10rem; height: 10rem;">
+        <img src = "./facebook-icon-transparent-bg.png" alt = "Contact Image" style= "width: 10rem; height: 10rem;">
+        <img src = "./github-logo-bg.png" alt = "Contact Image" style= "width: 10rem; height: 10rem; margin-left: 2rem;">
+    </div>
 </div>
 
 </body>

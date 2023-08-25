@@ -1,13 +1,14 @@
 .navbar {
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
     position: fixed;
-    width: 99%;
-    background-color: #2b7a78;  
+    min-width: 99vw;
+    background-color: #3aafa9;  
     top: 0px;  
+    background-size: cover;
 }
 
 .navbar-items {
@@ -17,17 +18,20 @@
     align-items: center;
     max-width: 40%;
     margin: auto;
-    gap: 10px;    
+    gap: 1rem;    
 }
 
-.buttons {
+.buttons, .Portfolio-btns {
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 15px;
+    border-radius: 3rem;
+    border-width: 0;
+    font-size: 1rem;
     background-color: #17252a;
     color:white;
-    padding: 5px;
+    padding: 1rem;
     text-decoration: none;
+    font-family: 'Gill Sans', sans-serif;
+    margin: 1rem auto;
 }
 
 .buttons:hover {
@@ -38,6 +42,7 @@
 .home{
     background-color: #3aafa9;
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,6 +51,24 @@
 .home-text {
     color: #17252a;
     font-family: 'Gill Sans', sans-serif;
+    /* margin-bottom: 3rem; */
+}
+
+.home-components {
+    margin-left: 7rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    max-width: 45vw;
+}
+
+.home-image {
+    min-width: 15rem;
+    margin-right: 10rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .CV-icon {
@@ -65,93 +88,119 @@
     justify-self: center;
     align-self: center;
     width: 40rem; 
-    height: 40 rem;
+    /* height: 40 rem; */
 }
-
 
 .Services, .Portfolio {
     background-color: #def2f1;
-    width: 100%;
-    height: 100%
+    min-height: 100vh;
+    min-width: 100vw;
 }
+
 .Stext {
     color:  #17252a;
     text-align: center;
     max-width: 70%;
     margin: auto;
+    font-family: 'Gill Sans', sans-serif;
 }
+
 .Sitem1, .Sitem3 {
     background-color: #3aafa9;
     max-width: 25%;
     border-radius: 30px;
     margin-bottom: 50px;
+    color: white;
+    padding: 1.6rem;
+    font-family: 'Gill Sans', sans-serif;
 }
+
 .Sitem2 {
     background-color: #2b7a78;
     max-width: 25%;
     border-radius: 30px;
     margin-bottom: 50px;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    padding: 1.6rem; 
 }
+
 .Services-comp, .Test-comp {
     display: flex;
     justify-content: space-around;
     align-content: center;
     text-align: center;
-    
+    margin: auto;
 }
+
 h3 {
     align-content: center;
 }
+
 svg {
     width:50px;
     height: 50px;
     margin: 5px auto;
 }
+
 .testimonials {
     background-color: #3aafa9;
 }
+
 .testimonials-text {
-    font-family: Verdana;
+    /* font-family: Verdana; */
     text-align: center;
     color: white;
 }
+
 .Services, .testimonials, .Portfolio {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-height: 100vh;
+    min-width: 100vw;
 }
+
 .Test-1, .Test-2, .Test-3 {
     background-color: #2b7a78;
     border-radius: 30px;
     text-align: center;
-    max-width: 25%;
+    max-width: 20%;
     max-height: 50%;
     margin: 70px;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', sans-serif;   
 }
+
 .small-test {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .portfolio-text {
-    font-family: Verdana;
+    /* font-family: Verdana; */
     text-align: center;
     color: black;
 }
 .Portfolio-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1rem;
     margin-bottom: 30px;
-}
-.Project-titles {
-    font-weight: bold;
-    font-family: sans-serif;
+    max-width: 30%;
+    margin: auto;
 }
 
-.Project-subtitles {
-    font-family: serif;
+.Project-titles {
+    font-weight: bold;
+    /* font-family: sans-serif; */
 }
+
+/* .Project-subtitles {
+    font-family: serif;
+} */
 
 .Project-nav-buttons {
     border-radius: 5px;
@@ -164,62 +213,98 @@ svg {
     font-size: 15px;
     
 }
-.Project-nav-buttons:hover {
+
+.Portfolio-btns:hover {
     background-color: #3aafa9;
+    font-weight: bold;
 }
+
 .Project-data {
     display: flex;
     justify-content: space-around;
     align-content: center;
     text-align: center;
 }
+
 .P1, .P2, .P3, .P4 {
     background-color: #def2f1;
     max-width: 25%;
+    border-radius: 3rem;
 }
+
+.P1:hover, .P2:hover, .P3:hover, .P4:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
 .Portfolio-items {
     display: flex;  
     justify-content: center;
     align-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
+    gap: 3rem;
+    margin-bottom: 3rem;
 
 }
+
 .Contact {
-    background-color: #3aafa9;
+    /* background-color: #3aafa9; */
+    background-image: url('contact-bg.jpg');
+    ;
     display: flex;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
+    min-width: 100vw;
     gap: 20%;
 }
+
 .Contact-button {
-    border-radius: 10px;
-    padding: none;
+    border-radius: 3rem;
+    padding: 1rem;
     text-decoration: none;
-    background-color: #2C3531;
-    color:white;
+    background-color: #3aafa9;
+    color: black;
     font-size: 30px;
     margin-top: 20px;
-    margin-left: 15rem;
+    margin-left: 12rem;
     max-width: 20%;
     /* margin: auto; */
     text-align: center;
     cursor: pointer;
+    border-width: 0;
+    padding-right: 2.5rem;
+    
 }
+
+.Contact-button:hover {
+    background-color: #17252a;
+    color: white;
+}
+
 .Contact-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 7rem;
+    margin-left: 10rem;
+    max-width: 55vw;
 }
+
 .contact-text{
-    font-family: Verdana;
+    /* font-family: Verdana; */
     text-align: center;
     color:#17252a;
-    
 }
-.contact-image {
-    justify-self: center;
-    align-self: center;
+
+.contact-images {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 40vw;
+    margin-right: 5rem;
+    gap: 2rem;
+}
+
+* {
+    font-family: 'Gill Sans', sans-serif;   
 }
